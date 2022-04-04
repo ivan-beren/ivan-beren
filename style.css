@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ? Reset */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ? Body */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 0;
+    background-color: rgb(42, 29, 116);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.index main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    width: 100%
+}
+
+.index main div{
+    width: 50%
+}
+
+.intro-img{
+    width: 80%
+}
+
+.caracteristicas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.caracteristicas div{
+    margin: 5vh 5vw 5vh 5vw;
+    border: black 5px solid;
+    padding: 5%;
+    height: 40vh;
+}
+
+.navegadores{
+    width: 60%;
+}
+
+.navegadores button{
+    font-size: 1.5em;
+    padding: .5rem 1rem;
+    border-radius: 2em;
+}
+
+.navegadores button:hover{
+    transition: .3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.main{
+    height: 50vh;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    background-color: rgb(237, 238, 210);
+}
+
+footer{
+    background-color: black;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 5vh 5vh;
+}
+
+.container img{
+    height: 30vh;
+}
+
+.logo{
+    height: 7rem;
+    margin-left: 2rem;
+}
+
+
+
+
+.foto{
+    height: 350px;
+    display: inline;   
+}
+
+p{
+    display: inline;
+}
+
+.valores li{
+    display: block;
+    padding: 5px;
+    list-style: circle;
+}
+
+.valores{
+    list-style: circle;
+}
+
+.icono{
+    padding: 20px;
+    width: 50px;
+}
+
+
+#consultas{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+.consultas{
+    display: grid;
+    height: 80%;
+}
+
+form{
+    width: 50%;
+}
+/* * footer */
+
+.redes{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
