@@ -37,28 +37,62 @@ ul{
     margin: 2rem;
 }
 
-
 .intro-img{
     width: 40rem;
     padding: 2rem;
 }
 
-main div p{
-
-}
-
-.caracteristicas{
+/* .caracteristicas{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     align-items: center;
-}
+} */
 
-.caracteristicas div{
+/*.caracteristicas div{
     margin: 5vh 5vw 5vh 5vw;
     border: black 5px solid;
+    border-radius: 2rem;
     padding: 5%;
     height: 40vh;
+    overflow: hidden;
+}*/
+.cart-container{
+    display: flex;
+    justify-content: space-around;
+}
+.cart{
+    height: 20rem;
+    width: 20%;
+    border: black 2px solid;
+    overflow: hidden;
+    position: relative;
+    /* ? R elative se aplica a padres, para que sus hijos al tener absolute
+    ?se comporten en forma relativa a su contenedor y no a la página */
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+.cart img{
+    position: absolute;
+    height: 60%;
+    top: 0;
+    width: 100%
+}
+.cart img:hover{
+    transition: .5s;
+    height: 100%
+}
+
+.cart p{
+    font-size: 1.4rem;
+    z-index: 10
+}
+
+.cart h2{
+    z-index: 5;
 }
 
 .navegadores{
@@ -82,9 +116,6 @@ body{
     background-color: rgb(237, 238, 210);
 }
 
-footer{
-    background-color: black;
-}
 
 .titulos{
     display: flex;
@@ -100,16 +131,37 @@ footer{
     margin: 5vh 5vh;
 }
 
-.container img{
-    height: 15rem;
+.cart second-text{
+    height: 10rem;
+    display: flex;
+}
+
+.cart h2{
+    font-size: 1.2rem;
+    z-index: 10
+}
+
+.cart .cyan-bg{
+    height: 30%;
+    top: 0;
+    width: 100%;
+    position: absolute
+}
+
+.cart .cyan-bg:hover{
+    height: 100%;
+    transition: .6s;
+    background-color: #6ac798a8
+}
+
+.cyan-bg{
+    background-color: #54e69da8
 }
 
 .logo{
     height: 7rem;
     margin-left: 2rem;
 }
-
-
 
 
 .foto{
@@ -132,7 +184,7 @@ p{
 }
 
 .icono{
-    padding: 20px;
+    padding: 15px;
     width: 50px;
 }
 
@@ -155,11 +207,11 @@ form{
 .redes{
     display:flex;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 footer{
-    position: fixed;
-    bottom: 0;
+    background-color: black;
+    position: absolute;
     width: 100%;
 }
