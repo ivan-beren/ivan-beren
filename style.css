@@ -99,11 +99,11 @@ ul{
     width: 60%;
 }
 
-.navegadores button{
+/* .navegadores button{
     font-size: 1.5em;
     padding: .5rem 1rem;
     border-radius: 2em;
-}
+} */
 
 .navegadores button:hover{
     transition: .3s;
