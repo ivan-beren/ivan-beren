@@ -4,6 +4,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    list-style: none;
 }
 a{
     text-decoration: none;
@@ -214,4 +215,20 @@ footer{
     background-color: black;
     position: absolute;
     width: 100%;
+}
+
+#carouselExampleControls{
+    display: grid;
+    width: 50%;
+    margin: 2rem 2rem;
+}
+
+.alquileres{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.descripcion-1, .descripcion-2, .descripcion-3 {
+    border: black 2px solid;
 }
