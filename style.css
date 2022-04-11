@@ -232,3 +232,10 @@ footer{
 .descripcion-1, .descripcion-2, .descripcion-3 {
     border: black 2px solid;
 }
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem;
+}
