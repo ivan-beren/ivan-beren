@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 0;
+    background-color: rgb(42, 29, 116);
+    
+    a{
+        img{
+            height: 7rem;
+            margin-left: 2rem;
+            }
+    }
+    ul{
+        width: 60%;
+        button:hover{
+            transition: .3s;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+}
