@@ -1,0 +1,136 @@
+@charset "UTF-8";
+footer {
+  background-color: black;
+  position: absolute;
+  width: 100%; }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 5px; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: .5rem 0;
+  background-color: #2a1d74; }
+  nav a img {
+    height: 7rem;
+    margin-left: 2rem; }
+  nav ul {
+    width: 60%; }
+    nav ul button:hover {
+      transition: .3s;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
+
+section {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: justify;
+  margin: 3em 3em; }
+  section div {
+    width: 70%; }
+  section h2 {
+    font-size: 3em;
+    text-align: center;
+    margin: 1%; }
+
+.nosotros {
+  display: flex;
+  justify-content: space-around; }
+  .nosotros div {
+    height: 20rem;
+    width: 20%;
+    border: black 2px solid;
+    overflow: hidden;
+    position: relative;
+    /* ? R elative se aplica a padres, para que sus hijos al tener absolute
+        ?se comporten en forma relativa a su contenedor y no a la página */
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    flex-direction: column;
+    border-radius: 2rem; }
+    .nosotros div div {
+      height: 30%;
+      top: 0;
+      width: 100%;
+      position: absolute;
+      background-color: #54e69da8; }
+    .nosotros div div:hover {
+      height: 100%;
+      transition: .6s;
+      background-color: #6ac798a8; }
+    .nosotros div h2 {
+      font-size: 1.2rem;
+      z-index: 10; }
+    .nosotros div p {
+      font-size: 1.4rem;
+      z-index: 10; }
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem; }
+
+.consultas {
+  display: flex;
+  justify-content: center;
+  padding: 2vh; }
+  .consultas form {
+    display: grid;
+    height: 80%;
+    width: 50%; }
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  background-color: #edeed2; }
+
+.titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 5vh 5vh; }
+
+.foto {
+  height: 350px;
+  display: inline; }
+
+.valores li {
+  display: block;
+  padding: 5px;
+  list-style: circle; }
+
+.valores {
+  list-style: circle; }
+
+.icono {
+  padding: 15px;
+  width: 50px; }

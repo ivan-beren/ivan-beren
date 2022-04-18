@@ -1,0 +1,40 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'footer';
+@import 'header';
+@import 'main';
+@import 'headings';
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 5vh 5vh;
+}
+
+.foto{
+    height: 350px;
+    display: inline;   
+}
+
+
+.valores li{
+    display: block;
+    padding: 5px;
+    list-style: circle;
+}
+
+.valores{
+    list-style: circle;
+}
+
+.icono{
+    padding: 15px;
+    width: 50px;
+}

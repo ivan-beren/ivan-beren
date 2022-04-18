@@ -1,0 +1,26 @@
+{
+  "name": "ivan-beren",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Ivan</h1>\r <h3 align=\"center\">Front end Developer Jr.</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss estilos/prueba-sass.css",
+    "watch-css": "nodemon -e scss -x \" npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan-beren/ivan-beren.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivan-beren/ivan-beren/issues"
+  },
+  "homepage": "https://github.com/ivan-beren/ivan-beren#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
