@@ -1,21 +1,21 @@
-// .index{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 40rem;
-//     margin: 2rem;
-//     img{
-//         width: 40rem;
-//         padding: 2rem;
-//     }
-// }
+.index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    margin: 2rem;
+    img{
+        width: 40rem;
+        padding: 2rem;
+    }
+}
 
 section {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    align-items: center;
+    align-items: flex-end;
     text-align: justify;
     margin: 3em 3em;
 
