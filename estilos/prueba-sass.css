@@ -25,12 +25,22 @@ nav {
       transition: .3s;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
 
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  margin: 2rem; }
+  .index img {
+    width: 40rem;
+    padding: 2rem; }
+
 section {
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  align-items: center;
+  align-items: flex-end;
   text-align: justify;
   margin: 3em 3em; }
   section div {
@@ -106,6 +116,16 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   background-color: #edeed2; }
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%; }
+  .imagen {
+    width: 300px;
+    height: auto; }
+  .orientacion1 {
+    display: flex;
+    flex-direction: column; } }
 
 .titulos {
   display: flex;
