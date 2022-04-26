@@ -1,15 +1,106 @@
 @media screen and (max-width: 768px) {
-    header {
-        width: 100%;
+    * {
+        font-size: 1em;
+    }
+
+    .navegacion {
+        width: 70%;
+
+        button {
+            font-size: 1em;
+        }
+    }
+
+    section {
+        height: 30vh;
+        font-size: 0.8em;
+
+        h2 {
+            font-size: 3em;
+            text-align: center;
+            margin: 1%;
+        }
     }
 
     .imagen {
-        width: 300px;
-        height: auto;
+        height: 20vh;
     }
 
-    .orientacion1{
+    // Estilos Nosotros
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+
+        p {
+            width: 70%;
+            text-align: justify;
+            margin-top: 2vh;
+            font-size: 1.5em;
+        }
+    }
+
+    // Estilos Alquileres
+    .alquileres {
         display: flex;
         flex-direction: column;
+        padding: 2vh;
+        height: auto;
+
+        p {
+            width: 80%;
+        }
     }
+}
+
+
+@media screen and (max-width: 425px) {
+    * {
+        font-size: 1em;
+    }
+
+    .navegacion {
+        width: 70%;
+
+        button {
+            font-size: 0.5em;
+        }
+    }
+
+    nav {
+        a {
+            img {
+                height: 7vh;
+            }
+        }
+    }
+
+    section {
+        height: 30vh;
+        font-size: 0.8em;
+
+        h2 {
+            font-size: 3em;
+            text-align: center;
+            margin: 1%;
+        }
+    }
+
+    .imagen {
+        height: 20vh;
+    }
+
+    .orientacion1,
+    .orientacion2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    .orientacion1 {
+        flex-direction: column-reverse;
+    }
+
 }
