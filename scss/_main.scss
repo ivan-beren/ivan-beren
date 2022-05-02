@@ -1,10 +1,11 @@
-.index{
+.index {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40rem;
     margin: 2rem;
-    img{
+
+    img {
         width: 40rem;
         padding: 2rem;
     }
@@ -30,10 +31,11 @@ section {
     }
 }
 
-.nosotros{
+.nosotros {
     display: flex;
     justify-content: space-around;
-    div{
+
+    div {
         height: 20rem;
         width: 20%;
         border: black 2px solid;
@@ -46,55 +48,108 @@ section {
         margin: 2rem 0;
         flex-direction: column;
         border-radius: 2rem;
-        div{
+
+        div {
             height: 30%;
             top: 0;
             width: 100%;
             position: absolute;
             background-color: #54e69da8;
-            }
-        div:hover{
+        }
+
+        div:hover {
             height: 100%;
             transition: .6s;
             background-color: #6ac798a8;
         }
-        h2{
+
+        h2 {
             font-size: 1.2rem;
             z-index: 10;
         }
-        p{
+
+        p {
             font-size: 1.4rem;
             z-index: 10;
         }
     }
 }
 
-// #galeria-1, #galeria-2, #galeria-3{
-//     margin: 2rem;
-//     height: 15rem;
+h1 {}
+
+.alquileres {
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .imagenes_deptos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+        height: auto;
+        margin: 5vh 0vh;
+        gap: 10px;
+
+        .imagen {
+            height: 48vh;
+            transition: transform .4s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        p {
+            
+        }
+
+    }
+}
+
+
+
+// .eventos{
+//     display: grid;
+//     grid-template-columns: repeat(3,1fr);
+//     grid-template-rows: repeat(2,1fr);
+//     height: auto;
+//     margin: 5vh 0vh;
+
+//     h3 {
+//         font-size: 2em;
+//     }
+
+//     p {
+//         width: 50%;
+//         text-align: justify;
+//         margin-top: 2vh;
+//     }
 // }
 
-// .depto-1, .depto-2, .depto-3{
-//     height: 100%;
-//     height: 100%;
+// .imagenes_eventos {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 2em;
 // }
 
-// .descripcion-1, .descripcion-2, .descripcion-3 {
-//     border: black 2px solid;
-// }
-
-.ubicacion{
+.ubicacion {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10rem;
 }
 
-.consultas{
+.consultas {
     display: flex;
     justify-content: center;
     padding: 2vh;
-    form{
+
+    form {
         display: grid;
         height: 80%;
         width: 50%;

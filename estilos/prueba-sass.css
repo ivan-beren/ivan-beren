@@ -83,6 +83,23 @@ section {
       font-size: 1.4rem;
       z-index: 10; }
 
+.alquileres h3 {
+  font-size: 2em; }
+
+.alquileres .imagenes_deptos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: auto;
+  margin: 5vh 0vh;
+  gap: 10px; }
+  .alquileres .imagenes_deptos .imagen {
+    height: 48vh;
+    transition: transform .4s; }
+    .alquileres .imagenes_deptos .imagen:hover {
+      transform: scale(1.2); }
+
 .ubicacion {
   display: flex;
   flex-direction: column;
