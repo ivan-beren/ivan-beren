@@ -1,4 +1,3 @@
-@charset "UTF-8";
 footer {
   background-color: black;
   position: absolute;
@@ -15,7 +14,7 @@ nav {
   align-items: center;
   width: 100%;
   padding: .5rem 0;
-  background-color: #2a1d74; }
+  background-color: #4d37c9; }
   nav a img {
     height: 7rem;
     margin-left: 2rem; }
@@ -51,37 +50,24 @@ section {
     margin: 1%; }
 
 .nosotros {
-  display: flex;
-  justify-content: space-around; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; }
   .nosotros div {
-    height: 20rem;
-    width: 20%;
+    height: 30em;
+    width: 18em;
+    margin: 5vh 5vw 5vh 5vw;
     border: black 2px solid;
-    overflow: hidden;
-    position: relative;
-    /* ? R elative se aplica a padres, para que sus hijos al tener absolute
-        ?se comporten en forma relativa a su contenedor y no a la página */
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
-    flex-direction: column;
-    border-radius: 2rem; }
-    .nosotros div div {
-      height: 30%;
-      top: 0;
-      width: 100%;
-      position: absolute;
-      background-color: #54e69da8; }
-    .nosotros div div:hover {
-      height: 100%;
-      transition: .6s;
-      background-color: #6ac798a8; }
+    border-radius: 2rem;
+    overflow: hidden; }
+    .nosotros div img {
+      height: 20vh; }
     .nosotros div h2 {
-      font-size: 1.2rem;
-      z-index: 10; }
-    .nosotros div p {
       font-size: 1.4rem;
-      z-index: 10; }
+      text-align: center; }
+    .nosotros div p {
+      font-size: 1.2rem; }
 
 .alquileres h3 {
   font-size: 2em; }
@@ -159,13 +145,21 @@ body {
       text-align: justify;
       margin-top: 2vh;
       font-size: 1.5em; }
-  .alquileres {
-    display: flex;
-    flex-direction: column;
-    padding: 2vh;
-    height: auto; }
-    .alquileres p {
-      width: 80%; } }
+  .alquileres h3 {
+    font-size: 2em; }
+  .alquileres .imagenes_deptos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    margin: 5vh 0vh;
+    gap: 5px; }
+    .alquileres .imagenes_deptos .imagen {
+      height: 20vh;
+      transition: transform .4s; }
+      .alquileres .imagenes_deptos .imagen:hover {
+        transform: scale(1.2); } }
 
 @media screen and (max-width: 425px) {
   * {
@@ -192,7 +186,22 @@ body {
     height: auto;
     margin-top: 3vh; }
   .orientacion1 {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  .alquileres h3 {
+    font-size: 2em; }
+  .alquileres .imagenes_deptos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    margin: 5vh 0vh;
+    gap: 5px; }
+    .alquileres .imagenes_deptos .imagen {
+      height: 20vh;
+      transition: transform .4s; }
+      .alquileres .imagenes_deptos .imagen:hover {
+        transform: scale(1.2); } }
 
 .titulos {
   display: flex;

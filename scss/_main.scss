@@ -30,52 +30,33 @@ section {
         margin: 1%;
     }
 }
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
 
-.nosotros {
-    display: flex;
-    justify-content: space-around;
-
-    div {
-        height: 20rem;
-        width: 20%;
+    div{height: 30em;
+        width: 18em;
+        margin: 5vh 5vw 5vh 5vw;
         border: black 2px solid;
-        overflow: hidden;
-        position: relative;
-        /* ? R elative se aplica a padres, para que sus hijos al tener absolute
-        ?se comporten en forma relativa a su contenedor y no a la página */
-        display: flex;
-        justify-content: space-around;
-        margin: 2rem 0;
-        flex-direction: column;
         border-radius: 2rem;
+        overflow: hidden;
 
-        div {
-            height: 30%;
-            top: 0;
-            width: 100%;
-            position: absolute;
-            background-color: #54e69da8;
+        img{
+            height: 20vh;
         }
 
-        div:hover {
-            height: 100%;
-            transition: .6s;
-            background-color: #6ac798a8;
-        }
-
-        h2 {
-            font-size: 1.2rem;
-            z-index: 10;
-        }
-
-        p {
+        h2{
             font-size: 1.4rem;
-            z-index: 10;
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.2rem;
         }
     }
 }
-
-h1 {}
 
 .alquileres {
 
@@ -100,42 +81,9 @@ h1 {}
                 transform: scale(1.2);
             }
         }
-
-        p {
-            
         }
 
     }
-}
-
-
-
-// .eventos{
-//     display: grid;
-//     grid-template-columns: repeat(3,1fr);
-//     grid-template-rows: repeat(2,1fr);
-//     height: auto;
-//     margin: 5vh 0vh;
-
-//     h3 {
-//         font-size: 2em;
-//     }
-
-//     p {
-//         width: 50%;
-//         text-align: justify;
-//         margin-top: 2vh;
-//     }
-// }
-
-// .imagenes_eventos {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 2em;
-// }
 
 .ubicacion {
     display: flex;
